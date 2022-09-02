@@ -183,8 +183,49 @@ a {
   background-color: rgb(242, 235, 220);
 }
 
+.titleBackground.foto {
+  width: 315px;
+}
+
+.titleBackground.pm {
+  width: 595px;
+}
+
 .titleBackgroundcontact {
   margin-top: 100px;
+}
+
+.portfolioImages {
+  width: 50%;
+}
+
+.rightLink {
+  display: block;
+  position: absolute;
+  margin: 0 10px 0 0;
+  bottom: -25px;
+  z-index: 101;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(86, 0, 112);
+}
+
+.rightLink::after {
+  content: " <-";
+}
+
+.leftLink {
+  display: block;
+  position: absolute;
+  margin: 0 0 0 10px;
+  bottom: -25px;
+  z-index: 101;
+  text-decoration: none;
+  color: rgb(86, 0, 112);
+}
+
+.leftLink::before {
+  content: "-> ";
 }
 
 .bereicheSec {
@@ -204,11 +245,17 @@ a {
   align-items: center;
 }
 
-.bereicheLinks > div {
+.bereicheInner {
   width: 60px;
   height: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.line-break {
+  display: none;
 }
 
 .bereicheLinks > div > a {
@@ -245,6 +292,7 @@ a {
   height: 100px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .bereicheLinks2 > div > a {
@@ -276,27 +324,13 @@ a {
   margin-top: 200px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .designImg > div {
   position: relative;
   width: 100%;
   margin: 50px 0 50px 0;
-}
-
-.designImg > div > img {
-  width: 50%;
-}
-
-.designImg > div > a {
-  display: block;
-  position: absolute;
-  margin: 0 10px 0 0;
-  bottom: -25px;
-  z-index: 101;
-  text-decoration: none;
-  font-weight: bold;
-  color: black;
 }
 
 .hoverOverlay {
@@ -314,6 +348,10 @@ a {
   opacity: 0.9;
 }
 
+.overlayText {
+  padding: 20px;
+}
+
 .alignRight {
   display: flex;
   align-items: flex-end;
@@ -325,7 +363,6 @@ a {
   position: relative;
   z-index: 100;
   float: right;
-  margin-bottom: 100px;
 }
 
 .designTitle > h2, .fotoTitle > h2 {
@@ -351,7 +388,6 @@ a {
   z-index: 100;
   float: left;
   margin-top: 0;
-  margin-bottom: 100px;
 }
 
 .multimediaTitle > h2 {
@@ -371,21 +407,13 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .multimediaImg > div {
+  position: relative;
   width: 100%;
   margin: 50px 0 50px 0;
-}
-
-.multimediaImg > div > a {
-  display: block;
-  margin: 0;
-}
-
-.multimediaImg > div > img {
-  width: 50%;
-  max-width: 1000px;
 }
 
 .fotografieSec {
@@ -397,15 +425,13 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .fotografieImg > div {
+  position: relative;
   width: 100%;
   margin: 50px 0 50px 0;
-}
-
-.fotografieImg > div > img {
-  width: 50%;
 }
 
 .marketingSec {
@@ -435,20 +461,13 @@ a {
   display: flex;
   width: 100%;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .marketingImg > div {
+  position: relative;
   width: 100%;
   margin: 50px 0 50px 0;
-}
-
-.marketingImg > div > img {
-  width: 50%;
-}
-
-.marketingImg > div > a {
-  display: block;
-  margin: 0;
 }
 
 .pmSec {
@@ -460,7 +479,6 @@ a {
   position: relative;
   z-index: 100;
   float: right;
-  margin-bottom: 100px;
 }
 
 .pmTitle > h2 {
@@ -472,21 +490,16 @@ a {
 }
 
 .pmImg {
-  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
 }
 
 .pmImg > div {
+  position: relative;
   width: 100%;
   margin: 50px 0 50px 0;
-}
-
-.pmImg > div > a {
-  margin: 0;
-  display: block;
-}
-
-.pmImg > div > img {
-  width: 50%;
 }
 
 footer {
@@ -501,4 +514,39 @@ footer {
 footer > div {
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width: 1500px) {
+  .bereicheLinks {
+    padding-bottom: 0;
+  }
+  .bereicheLinks > div > a {
+    font-size: 0;
+  }
+  .bereicheLinks2 {
+    padding-bottom: 0;
+  }
+  .bereicheLinks2 > div > a {
+    font-size: 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .break {
+    flex-basis: 100%;
+    height: 0;
+  }
+  .portfolioImages {
+    width: 70%;
+  }
+  .hoverOverlay {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .portfolioImages {
+    width: 90%;
+  }
+  .hoverOverlay {
+    width: 85%;
+  }
 }/*# sourceMappingURL=main.css.map */
