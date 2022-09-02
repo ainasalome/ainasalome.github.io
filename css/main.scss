@@ -1,0 +1,479 @@
+// Montserrat Font Weight 100, 300, 400, 500
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap');
+
+// Variablen
+$purple: rgb(86, 0, 112);
+$green: rgb(13, 61, 23);
+$beige: rgb(242, 235, 220);
+$mainTitle: 50px;
+$subTitle: 50px;
+$text: 25px;
+// ...
+
+// Überschriften
+h2 {
+    color: $purple;
+
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+// Sections :)
+// -- Welcome Section
+.mainSec {
+    width: 100%;
+    height: 75vh; 
+    background-color: $purple;
+}
+.welcomeTitle {
+    position: absolute;
+    width: 100%;
+    height: 75vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.welcomeTitle > h1 {
+    color: white;
+    font-size: $mainTitle;
+}
+
+// -- About Section -- //
+.aboutSec {
+    width: 100%;
+    height: 125vh;
+    background-color: white;
+}
+.aboutTitle , .PortTitle {
+    margin-top: 150px;
+    position: relative;
+    z-index: 100;
+  
+}
+.aboutTitle > h2 , .contactTitle > h2 , .PortTitle > h2, .bereichTitle > h2{
+    font-size: $subTitle;
+    z-index: 800;
+    margin: 0 0 0 30px;
+    font-weight: 1000;
+}
+.aboutText {
+    width: 45%;
+    float: left;
+}
+.aboutText > p {
+    font-size: $text;
+    padding: 20px 10px 0px 30px;
+    font-weight: 100;
+
+}
+.about-img > img {
+    width: 40%;
+    margin: 20px 0px 0px 40px;
+} 
+
+// Kenntnisse
+.kenntnisseTitle {
+    position: relative;
+    z-index: 100;
+    float: right;
+}
+.kenntnisseTitle > h2 , .contactTitle > h2 {
+    font-size: $subTitle;
+    z-index: 800;
+    margin: 150px 0 0 30px;
+    font-weight: 1000;
+    color: $green;
+}
+.kenntnisseTitle.right > h2 {
+    margin: 150px 30px 0 30px;
+}
+.kenntnisseTitle.right > span {
+    width: 360px;
+    margin-top: 150px;
+}
+.kenntnisse-img > img {
+    width: 50%;
+    margin: 0 0 0 12vw;
+    //margin: 20vh 0 0 60px;
+    //position: absolute;
+}
+.kenntnisseText {
+    width: 50%;
+}
+.kenntnisseText > p {
+    font-size: 1.5vw;
+    font-weight: 100;
+    z-index: 100;
+    margin: 30px 60px 30px 30px;
+    float: right;
+}
+.kenntnisseContent {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+}
+
+// Kontakt
+.contactSec {
+    height: 50vh;
+}
+.contactTitle {
+    margin-top: 100px;
+    position: relative;
+    z-index: 100;
+}
+.contactTitle > h2 {
+    margin: 150px 0px 0 30px;
+}
+.contactTitle > span {
+    width: 280px;
+}
+.contactImg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactImg > div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.contactImg > div > img {
+    width: 50px;
+    margin-right: 20px;
+}
+.contactImg > div > a {
+    text-decoration: none;
+    font-size: $text;
+}
+
+
+
+// -- Portfolio -- ///
+a {
+    color: $purple;
+}
+.PortTitle {
+    margin-left: 40%;
+    margin-bottom: 50px;
+}
+.titleBackground , .titleBackgroundcontact {
+    position: absolute;
+    z-index: -1;
+    top: 37px;
+    width: 320px;
+    height: 25px;
+    background-color:$beige;
+}
+.titleBackgroundcontact {
+    margin-top: 100px;
+}
+
+// Bereiche
+.bereicheSec {
+    height: 50vh;
+    margin-top: 100px;
+}
+.bereichTitle {
+    // margin-top: 100px;
+    position: relative;
+    z-index: 100;
+}
+.bereicheLinks {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.bereicheLinks > div {
+    width: 60px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.bereicheLinks > div > a {
+    margin: 0;
+    font-size: $text;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.bereicheLinks > div > a > img {
+    width: 100px;
+    height: 120px;
+    transition: 250ms;
+}
+.bereicheLinks > div > a > img:hover {
+    margin-bottom: -3px;
+    transform: scale(1.1);
+}
+
+
+.bereicheLinks2 {
+    margin-top: 200px;
+    height: 200px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $beige;
+}
+.bereicheLinks2 > div {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.bereicheLinks2 > div > a {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+.bereicheLinks2 > div > a > img {
+    width: 60px;
+    height: 100px;
+    transition: 250ms;
+}
+.bereicheLinks2 > div > a > img:hover {
+    margin-bottom: -3px;
+    transform: scale(1.1);
+}
+
+ // Design
+.designSec {
+    height: 100%;
+    margin-top: 100px;
+}
+.designImg {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.designImg > div {
+    position: relative;
+    width: 100%;
+    margin: 50px 0 50px 0;
+}
+.designImg > div > img {
+    width: 50%;
+}
+.designImg > div > a {
+    display: block;
+    position: absolute;
+    margin: 0 10px 0 0;
+    bottom: -25px;
+    z-index: 101;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.hoverOverlay {
+    position: absolute;
+    width: 46%;
+    height: calc(100%);
+    background-color: $beige;
+    opacity: 0;
+    z-index: 100;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.hoverOverlay:hover {
+    opacity: 0.9;
+}
+
+.alignRight {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 100%;
+}
+.designTitle, .fotoTitle {
+    position: relative;
+    z-index: 100;
+    float: right;
+    margin-bottom: 100px;
+}
+.designTitle > h2, .fotoTitle > h2 {
+    font-size: $subTitle;
+    z-index: 800;
+    margin: 0 20px 0 20px;
+    font-weight: 1000;
+    color: $green;
+    float: right;
+}
+.designTitle > span {
+    width: 226px;
+}
+
+// Multimedia //
+.multimediaSec {
+    height: 100%;
+    margin-top: 300px;
+}
+.multimediaTitle {
+    position: relative;
+    z-index: 100;
+    float: left;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+ .multimediaTitle > h2 {
+    font-size: $subTitle;
+    z-index: 800;
+    margin: 0 20px 0 20px;
+    font-weight: 1000;
+    color: $green;
+    float: right;
+}
+.multimediaTitle > span {
+    width: 344px;
+}
+.multimediaImg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.multimediaImg > div {
+    width: 100%;
+    margin: 50px 0 50px 0;
+}
+.multimediaImg > div > a {
+    display: block;
+    margin: 0;
+}
+.multimediaImg > div > img {
+    width: 50%;
+    max-width: 1000px;
+}
+
+// Fotografie //
+.fotografieSec {
+    height: 100%;
+    margin-top: 300px;
+}
+.fotografieImg {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fotografieImg > div {
+    width: 100%;
+    margin: 50px 0 50px 0;
+}
+.fotografieImg > div > img {
+    width: 50%;
+}
+
+// Marketing //
+.marketingSec {
+    height: 100%;
+    margin-top: 300px; 
+}
+.marketingTitle {
+    position: relative;
+    z-index: 100;
+    float: left;
+}
+.marketingTitle > h2 {
+font-size: $subTitle;
+z-index: 800;
+margin: 0 20px 0 20px;
+font-weight: 1000;
+color: $green;
+}
+.multimediaTitle > span {
+width: 344px;
+}
+
+.marketingImg {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.marketingImg > div {
+    width: 100%;
+    margin: 50px 0 50px 0;
+}
+.marketingImg > div > img {
+    width: 50%;
+}
+.marketingImg > div > a {
+    display: block;
+    margin: 0;
+}
+
+// PM //
+.pmSec {
+    margin-top: 300px; 
+    height: 100%;
+}
+.pmTitle {
+    position: relative;
+    z-index: 100;
+    float: right;
+    margin-bottom: 100px;
+}
+.pmTitle > h2 {
+    font-size: $subTitle;
+    z-index: 800;
+    margin: 0 20px 0 20px;
+    font-weight: 1000;
+    color: $purple;
+}
+.pmImg {
+    margin-top: 200px;
+}
+.pmImg > div {
+    width: 100%;
+    margin: 50px 0 50px 0;
+}
+.pmImg > div > a {
+    margin: 0;
+    display: block;
+}
+.pmImg > div > img {
+    width: 50%;
+}
+
+
+
+
+
+
+// Footer //
+footer {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green;
+}
+footer > div {
+    text-align: center;
+    color: white;
+}
