@@ -9,9 +9,22 @@
 </head>
 <body>
 
-    <!-- Burger Menu TBD -->
-    <div>
+    <!-- Burger Menu -->
+    <div class="burgerMenu" onclick="openMenu()">
+        <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+        <label for="checkbox3">
+            <div class="hamburger hamburger3">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+            </div>
+        </label>
+    </div>
 
+    <div class="burgerOverlay">
+        <a class="burgerLink" href="portfolio.html">Portfolio</a>
+        <a class="burgerLink" href="impressum.html">Impressum</a>
     </div>
 
     <!-- 1. Welcome Section -->
@@ -26,21 +39,28 @@
         <div class="aboutTitle">
             <h2>Über mich</h2><span class="titleBackground"></span>
         </div>
-        <div class="aboutText">
-            <p> Mein Name ist Aina, ich bin 19 Jahre alt und habe im Sommer 2022 meine Lehre zur Mediamatikerin abgeschlossen. 
-                Aktuell arbeite ich noch bei meinem Lehrbetrieb der Bau- und Verkehrsdirektion. In meiner Freizeit spiele ich gerne Klavier.
-            </p>
+
+        <div class="aboutContent">
+            <!-- <div class="aboutText"> -->
+                <p class="aboutText"> Mein Name ist Aina, ich bin 19 Jahre alt und habe im Sommer 2022 meine Lehre zur Mediamatikerin abgeschlossen. 
+                    Aktuell arbeite ich noch bei meinem Lehrbetrieb der Bau- und Verkehrsdirektion. In meiner Freizeit spiele ich gerne Klavier.
+                </p>
+            <!-- </div> -->
+            <!-- <div class="aboutImg"> -->
+                 <img class="aboutImg" src="https://res.cloudinary.com/dodxyoerw/image/upload/v1661932097/ainasalome/DSC01189_zhv0oa.jpg">
+            <!-- </div> -->
         </div>
-        <div class="about-img"> <img src="https://res.cloudinary.com/dodxyoerw/image/upload/v1661932097/ainasalome/DSC01189_zhv0oa.jpg"> </div>
+    </section>
 
         <!--Kenntnisse-->
-    <section class="aboutSec">
+    <section class="kenntnisseSec">
         <div class="kenntnisseTitle right">
             <h2>Kenntnisse</h2><span class="titleBackground"></span>
         </div>
         <div class="kenntnisseContent">
-            <div class="kenntnisse-img"> <img src="https://res.cloudinary.com/dodxyoerw/image/upload/v1661932069/ainasalome/spinnenentz_fbefxg.png"> </div>
-            <div class="kenntnisseText"> <p>Links habe ich meine Kenntnisse
+            <img class="kenntnisseImg" src="https://res.cloudinary.com/dodxyoerw/image/upload/v1661932069/ainasalome/spinnenentz_fbefxg.png">
+            <p class="kenntnisseText">
+                Links habe ich meine Kenntnisse
                 abgebildet. Während meiner Lehre zur Mediamatikerin habe ich am meisten
                 im Multimediabereich gearbeitet, weswegen meine Kompetenzen dort am höchsten
                 sind. Meine Marketing-Kenntnisse habe ich mir durch den Unterricht angeeignet,
@@ -50,8 +70,8 @@
                 Projektmanagement Erfahrungen gesammelt. Meine Informatik-Kenntnisse
                 sind auch eher theoretisch veranlasst. Im Webbereich habe ich durch die Schule
                 viel mit PHP und SQL/DBs, aber auch mit HTML und CSS gearbeitet. Während
-                meiner Ausbildung habe ich vor allem gelernt, wie ich ein Design an ein CD anpasse.</p>
-            </div>
+                meiner Ausbildung habe ich vor allem gelernt, wie ich ein Design an ein CD anpasse.
+            </p>
         </div>
         
     </section>

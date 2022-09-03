@@ -1,21 +1,48 @@
-function getHeight () {
-    // var imgHeight = document.querySelectorAll('.imgHeight');
-    // var hoverOverlay = document.querySelectorAll('.hoverOverlay');
-
-    // for (i = 0; i < hoverOverlay.length; i++) {
-    //     var height = imgHeight[i].clientHeight;
-    //     var realHeight = height + "px";
-    //     hoverOverlay[i].style.height = realHeight;
-    // } 
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// window.addEventListener('resize', function setHeight() {    
-//     var imgHeight = document.querySelectorAll('.imgHeight');
-//     var hoverOverlay = document.querySelectorAll('.hoverOverlay');
+async function openMenu() {
+   
+    var burgerOverlay = document.querySelector(".burgerOverlay");
+    var burgerMenu = document.querySelector(".burgerMenu");
+    var burgerLink = document.querySelectorAll(".burgerLink");
 
-//     for (i = 0; i < hoverOverlay.length; i++) {
-//         var height = imgHeight[i].clientHeight;
-//         var realHeight = height + "px";
-//         hoverOverlay[i].style.height = realHeight;
-//     } 
-// })
+    var bar = document.querySelector(".bar1");
+    var bar2 = document.querySelector(".bar4");
+
+    var overlayWidth = burgerOverlay.offsetWidth;
+
+    if (overlayWidth == 0) {
+        burgerOverlay.style.width = "500px";
+        burgerOverlay.style.position = "fixed";
+        burgerMenu.style.position = "fixed";
+
+        bar.style.backgroundColor = "rgb(86, 0, 112)";
+        bar2.style.backgroundColor = "rgb(86, 0, 112)";
+
+        for (let i = 0; i < burgerLink.length; i++) {
+            burgerLink[i].style.display = "block";
+            await sleep(400);
+            burgerLink[i].style.opacity = "1";
+        }
+
+    }
+
+    if (overlayWidth == 500) {
+        for (i = 0; i < burgerLink.length; i++) {
+            burgerLink[i].style.opacity = "0";
+            await sleep(400);
+            burgerLink[i].style.display = "none";
+        }
+        await sleep(400);
+
+        burgerOverlay.style.width = "0px";
+        burgerOverlay.style.position = "absolute";
+        burgerMenu.style.position = "absolute";
+
+        bar.style.backgroundColor = "white";
+        bar2.style.backgroundColor = "white";
+    }
+}
+
