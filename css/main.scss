@@ -29,6 +29,10 @@ body, html {
     scroll-behavior: smooth;
 }
 
+b {
+    font-weight: 800;
+}
+
 /* HAMBURGER */
 
 .burgerMenu {
@@ -463,6 +467,7 @@ a {
 }
 .overlayText {
     padding: 20px;
+    font-size: $text;
 }
 
 .alignRight {
