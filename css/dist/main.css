@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap");
 h2 {
-  color: rgb(86, 0, 112);
+  color: #560070;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -11,8 +11,10 @@ h2 {
 body, html {
   font-family: "Montserrat", sans-serif;
   margin: 0;
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
-  scrollbar-width: none; /* for Firefox */
+  -ms-overflow-style: none;
+  /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  /* for Firefox */
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -108,7 +110,7 @@ body, html {
   width: 0px;
   height: 100%;
   position: absolute;
-  background-color: rgb(242, 235, 220);
+  background-color: #f2ebdc;
   right: 0;
   top: 0;
   transition: 200ms;
@@ -141,7 +143,7 @@ body, html {
 .mainSec {
   width: 100%;
   height: 75vh;
-  background-color: rgb(86, 0, 112);
+  background-color: #560070;
 }
 
 .welcomeTitle {
@@ -214,7 +216,7 @@ body, html {
   font-size: 50px;
   z-index: 800;
   font-weight: 1000;
-  color: rgb(13, 61, 23);
+  color: #0d3d17;
   margin: 0 30px 0 30px;
 }
 
@@ -284,7 +286,7 @@ body, html {
 }
 
 a {
-  color: rgb(86, 0, 112);
+  color: #560070;
 }
 
 .PortTitle {
@@ -298,7 +300,7 @@ a {
   top: 37px;
   width: 320px;
   height: 25px;
-  background-color: rgb(242, 235, 220);
+  background-color: #f2ebdc;
 }
 
 .titleBackground.foto {
@@ -329,7 +331,7 @@ a {
   z-index: 101;
   text-decoration: none;
   text-transform: capitalize;
-  color: rgb(86, 0, 112);
+  color: #560070;
 }
 
 .rightLink::after {
@@ -343,7 +345,7 @@ a {
   bottom: -25px;
   z-index: 101;
   text-decoration: none;
-  color: rgb(86, 0, 112);
+  color: #560070;
 }
 
 .leftLink::before {
@@ -406,7 +408,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(242, 235, 220);
+  background-color: #f2ebdc;
 }
 
 .bereicheLinks2 > div {
@@ -458,8 +460,8 @@ a {
 .hoverOverlay {
   position: absolute;
   width: 46%;
-  height: 100%;
-  background-color: rgb(242, 235, 220);
+  height: calc(100%);
+  background-color: #f2ebdc;
   opacity: 0;
   z-index: 100;
   transition: 200ms;
@@ -492,7 +494,7 @@ a {
   z-index: 800;
   margin: 0 20px 0 20px;
   font-weight: 1000;
-  color: rgb(13, 61, 23);
+  color: #0d3d17;
   float: right;
 }
 
@@ -517,7 +519,7 @@ a {
   z-index: 800;
   margin: 0 20px 0 20px;
   font-weight: 1000;
-  color: rgb(13, 61, 23);
+  color: #0d3d17;
   float: right;
 }
 
@@ -572,7 +574,7 @@ a {
   z-index: 800;
   margin: 0 20px 0 20px;
   font-weight: 1000;
-  color: rgb(13, 61, 23);
+  color: #0d3d17;
 }
 
 .multimediaTitle > span {
@@ -608,7 +610,7 @@ a {
   z-index: 800;
   margin: 0 20px 0 20px;
   font-weight: 1000;
-  color: rgb(13, 61, 23);
+  color: #0d3d17;
 }
 
 .pmImg {
@@ -640,7 +642,7 @@ a {
   z-index: 800;
   margin: 0 20px 0 20px;
   font-weight: 1000;
-  color: rgb(13, 61, 23);
+  color: #0d3d17;
 }
 
 .multimediaTitle > span {
@@ -677,7 +679,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(86, 0, 112);
+  background-color: #560070;
 }
 
 footer > div {
@@ -689,12 +691,15 @@ footer > div {
   .bereicheLinks {
     padding-bottom: 0;
   }
+
   .bereicheLinks > div > a {
     font-size: 0;
   }
+
   .bereicheLinks2 {
     padding-bottom: 0;
   }
+
   .bereicheLinks2 > div > a {
     font-size: 0;
   }
@@ -704,9 +709,11 @@ footer > div {
     flex-basis: 100%;
     height: 0;
   }
+
   .portfolioImages {
     width: 70%;
   }
+
   .hoverOverlay {
     width: 65%;
   }
@@ -715,7 +722,8 @@ footer > div {
   .portfolioImages {
     width: 90%;
   }
+
   .hoverOverlay {
     width: 85%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
