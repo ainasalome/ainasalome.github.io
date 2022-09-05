@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Impressum</title>
 </head>
 <body>
@@ -28,44 +29,46 @@
     </div>
 
     <!-- 1. Welcome Section -->
-    <section class="mainSec">
+    <section class="mainSec" id="top">
         <div class="welcomeTitle">
-            <h1>Impressum</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000">IMPRESSUM</h1>
         </div>
     </section>
 
     <!-- 2. About Section -->
     <section class="aboutSec">
         <div class="aboutTitle">
-            <h2>Daten</h2><span class="titleBackground"></span>
+            <h2>Daten</h2><span class="titleBackground impressum"></span>
         </div>
 
         <div class="impressum">
-                <p>  Aina Salomé Heiniger </p>
-                <p>  Hagnetstrasse 35 </p>
-                <p>  3184  Wünnewil</p>
+            <div>
+                <p>Aina Salomé Heiniger </p>
+                <p>Hagnetstrasse 35</p>
+                <p>3184 Wünnewil</p>
                 <a class href= "mailto:aina.heiniger@bluewin.ch">aina.heiniger@bluewin.ch</a>
-                <a href="tel:+419115801"> +41 79 911 58 01</a>
-        </div>
-
-
-                
-            <!-- </div> -->
-            <!-- <div class="aboutImg"> -->
-            <!-- </div> -->
+                <a href="tel:+419115801">+41 79 911 58 01</a>
+            </div>
         </div>
     </section>
 
 
     <!--Portfolio Verlinkung-->
    
-
     <footer>
         <div>
-            <p>Made with love by Aina :)</p>
+            <p>Made with <span style="color: red; font-size: 22px; margin: 0 5px 0 5px;">&hearts;</span> by Aina</p>
+            <p>-----------------------------</p>
+            <a href="index.html">Home</a>
+            <p><a href="#top">&uarr;</a></p>
         </div>
     </footer>
 
 </body>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 </html>

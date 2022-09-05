@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Homepage</title>
 </head>
 <body>
@@ -28,9 +29,9 @@
     </div>
 
     <!-- 1. Welcome Section -->
-    <section class="mainSec">
+    <section class="mainSec" id="top">
         <div class="welcomeTitle">
-            <h1>WELCOME</h1>
+            <h1 data-aos="fade-up" data-aos-duration="1000">WELCOME</h1>
         </div>
     </section>
 
@@ -72,8 +73,6 @@
         
     </section>
         
-    </section>
-
     <!-- 3. Contact Section -->
     <section class="contactSec">
         <div class="contactTitle">
@@ -91,19 +90,27 @@
         </div>
     </section>
 
-    <!--Portfolio Verlinkung-->
-    <section class="contactSec">
+    <!-- Portfolio Verlinkung -->
+    <section class="portSec">
         <div class="PortTitle">
-            <h2 class="h2"><a href="portfolio.html">Portfolio</a></h2><span class="titleBackground"></span>
+            <span class="titleBackground portTitle"><a href="portfolio.html">Portfolio</a></span>
         </div>
     </section>
 
     <footer>
         <div>
-            <p>Made with love by Aina :)</p>
+            <p>Made with <span style="color: red; font-size: 22px; margin: 0 5px 0 5px;">&hearts;</span> by Aina</p>
+            <p>-----------------------------</p>
+            <a href="impressum.html">Impressum</a>
+            <p><a href="#top">&uarr;</a></p>
         </div>
     </footer>
 
 </body>
 <script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 </html>
