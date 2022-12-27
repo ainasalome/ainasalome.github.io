@@ -13,8 +13,16 @@ async function openMenu() {
 
     var overlayWidth = burgerOverlay.offsetWidth;
 
+    var deviceWidth = window.innerWidth;
+
+    if (deviceWidth < 850) {
+        var menuWidth = "100%"
+    } else {
+        var menuWidth = "500px";
+    }
+
     if (overlayWidth == 0) {
-        burgerOverlay.style.width = "500px";
+        burgerOverlay.style.width = menuWidth;
         burgerOverlay.style.position = "fixed";
         burgerMenu.style.position = "fixed";
 
@@ -27,9 +35,7 @@ async function openMenu() {
             burgerLink[i].style.opacity = "1";
         }
 
-    }
-
-    if (overlayWidth == 500) {
+    } else {
         for (i = 0; i < burgerLink.length; i++) {
             burgerLink[i].style.opacity = "0";
             await sleep(400);
