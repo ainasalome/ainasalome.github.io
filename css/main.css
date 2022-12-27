@@ -227,7 +227,7 @@ a {
 }
 
 .kenntnisseTitle.right > span {
-  width: 500px;
+  width: 100%;
 }
 
 .kenntnisseContent {
@@ -881,6 +881,17 @@ footer > div > p > a {
   }
   .titleBackground.impressum {
     width: 230px;
+  }
+  .titleBackground.about {
+    width: 340px;
+    top: 36px;
+  }
+  .titleBackground.kentnisse {
+    top: 36px;
+  }
+  .titleBackground.contact {
+    width: 280px;
+    top: 36px;
   }
   .overlayText {
     font-size: 17px;
