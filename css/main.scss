@@ -10,7 +10,7 @@ $subTitle: 50px;
 $text: 25px;
 // ...
 
-// Überschriften
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800&display=swap");
 h2 {
   color: rgb(86, 0, 112);
 }
@@ -313,7 +313,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: 200px;
 }
 
 .PortTitle > span > a {
@@ -575,7 +575,7 @@ li a::after {
 
 .multimediaSec {
   height: 100%;
-  margin-top: 300px;
+  margin-top: 150px;
 }
 
 .multimediaTitle {
@@ -613,7 +613,7 @@ li a::after {
 
 .fotografieSec {
   height: 100%;
-  margin-top: 300px;
+  margin-top: 150px;
 }
 
 .fotografieImg {
@@ -631,7 +631,7 @@ li a::after {
 
 .marketingSec {
   height: 100%;
-  margin-top: 300px;
+  margin-top: 150px;
 }
 
 .marketingTitle {
@@ -666,7 +666,7 @@ li a::after {
 }
 
 .pmSec {
-  margin-top: 300px;
+  margin-top: 150px;
   height: 100%;
 }
 
@@ -700,7 +700,7 @@ li a::after {
 .informatikSec {
   width: 100%;
   height: 100%;
-  margin-top: 300px;
+  margin-top: 150px;
   margin-bottom: 300px;
 }
 
@@ -829,9 +829,7 @@ footer > div > p > a {
   }
 
 	
-  .hoverOverlay {
-    width: 0;
-  }
+  
 }
 @media screen and (max-width: 1100px) {
   .break {
@@ -841,13 +839,16 @@ footer > div > p > a {
   .portfolioImages {
     width: 70%;
   }
-  .hoverOverlay {
-    width: 65%;
-  }
+  
 
   .hoverOverlay {
     width: 0;
   }
+	
+.overlayText {
+		width: 0;
+		opacity: 0;
+	}
 }
 @media screen and (max-width: 750px) {
   .portfolioImages {
@@ -863,4 +864,8 @@ footer > div > p > a {
   .hoverOverlay {
     width: 0;
   }
+.overlayText {
+		width: 0;
+		opacity: 0;
+	}
 }/*# sourceMappingURL=main.css.map */
