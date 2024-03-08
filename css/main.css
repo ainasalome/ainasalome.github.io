@@ -24,6 +24,14 @@ b {
 a {
   color: rgb(86, 0, 112);
 }
+ .white{
+	color: white;	 
+}
+
+.welcomeTitle {
+		 display: flex;
+flex-direction: column;
+}
 
 /* HAMBURGER */
 .burgerMenu {
